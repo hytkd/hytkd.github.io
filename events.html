@@ -7,20 +7,20 @@ title: HYTKD - Tapahtumat
 	Ilmoittautuminen tapahtumiin tapahtuu seuran <a href="https://hytkd.myclub.fi/flow/events" target="_blank">MyClubin</a> kautta.
 </p>
 
+<!-- Input calendar feeds from MyClub. Class names still have iframes in them because the previous implementation used an iframe, and I'm too lazy to change them. The embeds are controlled here: https://hytkd.myclub.fi/event_embeds -->
+
 <div class="iframe-container hidden-desktop">
 	<div class="iframe-desktop">
-		<iframe 
-			src="https://calendar.google.com/calendar/embed?src=sjf4i8jce32upnti7u48pe8q0g%40group.calendar.google.com&bgcolor=%23e5e5da&showPrint=0&wkst=2"
-			frameborder="0"
-			scrolling="no">
-		</iframe>
+		<!-- myClub embed JS - start -->
+		<div class="myclub-embed" data-url="https://hytkd.myclub.fi/event_embeds/15323?token=5f42511f78222969434640a8feddc39899b8c701"></div>
+		<script>(function(d, s, id) { var js, mjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.async = true; js.src = "https://d2ubdm6yoox6gh.cloudfront.net/assets/myclub-embed.js"; mjs.parentNode.insertBefore(js, mjs); }(document, 'script', 'myclub-embed-js'));</script>
+		<!-- myClub embed JS - end -->
 	</div>
 
 	<div class="iframe-mobile">
-		<iframe 
-			src="https://calendar.google.com/calendar/embed?&showCalendars=0&mode=AGENDA&wkst=2&src=sjf4i8jce32upnti7u48pe8q0g%40group.calendar.google.com&bgcolor=%23e5e5da&showPrint=0"
-			frameborder="0"
-			scrolling="no">
-		</iframe>
+		<!-- myClub embed JS - start -->
+		<div class="myclub-embed" data-url="https://hytkd.myclub.fi/event_embeds/15324?token=e9250c8d404da782cd59d9d43a3d8ac1f310fd8a"></div>
+		<script>(function(d, s, id) { var js, mjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.async = true; js.src = "https://d2ubdm6yoox6gh.cloudfront.net/assets/myclub-embed.js"; mjs.parentNode.insertBefore(js, mjs); }(document, 'script', 'myclub-embed-js'));</script>
+		<!-- myClub embed JS - end -->
 	</div>
 </div>
